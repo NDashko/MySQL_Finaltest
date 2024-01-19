@@ -1,6 +1,6 @@
 // Выведите только четные числа от 1 до 10. Пример: 2,4,6,8,10 
 
-DROP FUNCTION  IF EXISTS numbers;
+DROP PROCEDURE IF EXISTS numbers;
 DELIMITER $$
 CREATE PROCEDURE numbers()
 BEGIN
