@@ -18,5 +18,4 @@ RETURN result;
 END //
 DELIMITER ;
 
-
 SELECT times(123456);
