@@ -1,6 +1,6 @@
 // Создайте функцию, которая принимает кол-во сек и формат их в кол-во дней часов. Пример: 123456 ->'1 days 10 hours 17 minutes 36 seconds '
 
-DROP FUNCTION IF EXISTS times;
+DROP FUNCTION  IF EXISTS times;
 DELIMITER //
 CREATE FUNCTION times (seconds INT)
 RETURNS CHAR(255)
@@ -17,3 +17,6 @@ SET result = concat(days, "days", hours, "hours", minutes, "minutes", sec, "seco
 RETURN result;
 END //
 DELIMITER ;
+
+
+SELECT times(123456);
